@@ -1,0 +1,7 @@
+#!/bin/sh
+
+docker run -d -p 4444:4444 --shm-size 2g selenium/standalone-firefox:3.8.1-francium
+
+sleep 10
+
+bundle exec rspec
